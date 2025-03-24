@@ -2,11 +2,11 @@ import streamlit as st
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# Initialize session state to store graph data
+# Initialize session state to store graph data  
 if 'processes' not in st.session_state:
     st.session_state.processes = []
 if 'resources' not in st.session_state:
-    st.session_state.resources = []
+    st.session_state.resources = []     ##created code for intiliazing resources
 if 'request_edges' not in st.session_state:
     st.session_state.request_edges = []
 if 'allocation_edges' not in st.session_state:
