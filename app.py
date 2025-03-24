@@ -36,7 +36,7 @@ if st.sidebar.button("Add Resource"):
 st.sidebar.header("Add Request Edge")
 if st.session_state.processes and st.session_state.resources:
     process_select = st.sidebar.selectbox("Select Process", st.session_state.processes)
-    resource_select = st.sidebar.selectbox("Select Resource", st.session_state.resources)
+    resource_select = st.sidebar.selectbox("Select Resource", st.session_state.resources) ##merging edges code
     if st.sidebar.button("Add Request Edge"):
         edge = (process_select, resource_select)
         if edge in st.session_state.request_edges:
