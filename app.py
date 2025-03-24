@@ -49,7 +49,7 @@ else:
 st.sidebar.header("Add Allocation Edge")
 if st.session_state.resources and st.session_state.processes:
     resource_select_alloc = st.sidebar.selectbox("Select Resource", st.session_state.resources, key="alloc_resource")
-    process_select_alloc = st.sidebar.selectbox("Select Process", st.session_state.processes, key="alloc_process")
+    process_select_alloc = st.sidebar.selectbox("Select Process", st.session_state.processes, key="alloc_process") ## added code for allocation of edges
     if st.sidebar.button("Add Allocation Edge"):
         edge = (resource_select_alloc, process_select_alloc)
         if edge in st.session_state.allocation_edges:
