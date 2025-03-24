@@ -108,7 +108,7 @@ for edge in st.session_state.allocation_edges:
 if G.number_of_nodes() > 0:
     fig, ax = plt.subplots()
     pos = nx.spring_layout(G)
-    nx.draw_networkx_nodes(G, pos, nodelist=st.session_state.processes, node_color='blue', node_shape='o', ax=ax)
+    nx.draw_networkx_nodes(G, pos, nodelist=st.session_state.processes, node_color='blue', node_shape='o', ax=ax) ## code for deadlock checker
     nx.draw_networkx_nodes(G, pos, nodelist=st.session_state.resources, node_color='red', node_shape='s', ax=ax)
     nx.draw_networkx_edges(G, pos, ax=ax)
     nx.draw_networkx_labels(G, pos, ax=ax)
