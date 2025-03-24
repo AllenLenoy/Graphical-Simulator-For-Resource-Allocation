@@ -14,7 +14,7 @@ if 'allocation_edges' not in st.session_state:
 
 # Sidebar controls for interactivity
 st.sidebar.header("Add Process")
-process_name = st.sidebar.text_input("Process Name (e.g., P1)")
+process_name = st.sidebar.text_input("Process Name (e.g., P1)") ##added code for sidebar controls
 if st.sidebar.button("Add Process"):
     if process_name in st.session_state.processes:
         st.sidebar.error("Process already exists")
