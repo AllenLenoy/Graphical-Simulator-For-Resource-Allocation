@@ -63,7 +63,7 @@ st.sidebar.header("Remove Request Edges")
 for edge in st.session_state.request_edges[:]:  # Use a copy to avoid modification issues
     col1, col2 = st.sidebar.columns([3, 1])
     col1.write(f"{edge[0]} → {edge[1]}")
-    if col2.button("Remove", key=f"remove_request_{edge[0]}_{edge[1]}"):
+    if col2.button("Remove", key=f"remove_request_{edge[0]}_{edge[1]}"):## removing edges from resource allocation
         st.session_state.request_edges.remove(edge)
 
 st.sidebar.header("Remove Allocation Edges")
