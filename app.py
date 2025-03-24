@@ -24,7 +24,7 @@ if st.sidebar.button("Add Process"):
         st.session_state.processes.append(process_name)
 
 st.sidebar.header("Add Resource")
-resource_name = st.sidebar.text_input("Resource Name (e.g., R1)")
+resource_name = st.sidebar.text_input("Resource Name (e.g., R1)") ## resources adding code
 if st.sidebar.button("Add Resource"):
     if resource_name in st.session_state.resources:
         st.sidebar.error("Resource already exists")
